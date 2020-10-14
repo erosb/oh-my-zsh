@@ -54,6 +54,7 @@ ZSH_THEME="erosb"
 # plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_aliases
 
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=yellow,bold

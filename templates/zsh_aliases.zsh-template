@@ -1,0 +1,15 @@
+alias la='ls -A'
+alias ll='ls -l'
+alias l1='ls -1'
+alias ngrep='grep -n'
+alias igrep="grep -i"
+alias ingrep="grep -in"
+alias g=git
+
+alias json="python -m json.tool"
+
+alias dps='docker ps'
+
+
+alias mci='mvn clean install'
+alias mcp='mvn clean package'
