@@ -80,5 +80,6 @@ function displayed_pwd() {
 # display exitcode on the right when >0
 return_code="%(?..%{$fg[red]%}%? ↵ %{$reset_color%})"
         
-PROMPT='${return_code}$(git_compact_status) %{$reset_color%}$(displayed_pwd) %# '
+# PROMPT='${return_code}$(git_compact_status) %{$reset_color%}$(displayed_pwd) %# '
+PROMPT='${return_code}$(git_compact_status) %{$reset_color%}$(displayed_pwd)⠠⠵ '
 RPROMPT=''
