@@ -32,7 +32,7 @@ function git_compact_status() {
     
     lines_added=$(( $arr[1] +  $untracked_lines ))
     lines_deleted=$arr[2]
-    fmt_branch="(%B$FG[125]$branch%b)"
+    fmt_branch="(%B$FG[148]$branch%b)"
     if [[ $lines_added -eq 0 ]]; then
         fmt_lines_added=""
     else
@@ -63,7 +63,7 @@ function displayed_pwd() {
         return
     fi
     relpwd=$(realpath --relative-base=$(realpath $HOME) $PWD)
-    if [[ $relpwd == $PWD ]]; then 
+    if [[ $relpwd == $(realpath $PWD) ]]; then 
         echo "${relpwd:h}/%B${relpwd:t}%b"
     else
         if [[ ${relpwd:h} == "." ]]; then
